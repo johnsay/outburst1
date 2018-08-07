@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{D33629B6-21FF-DCC0-8338-4AA56E2D817F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2017_4_3;UNITY_2017_4;UNITY_2017;PLATFORM_ARCH_64;UNITY_64;UNITY_ANALYTICS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_GENERICS;ENABLE_PVR_GI;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_NATIVE_ARRAY;ENABLE_SPRITE_MASKING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;INCLUDE_PUBNUB;ENABLE_PLAYMODE_TESTS_RUNNER;ENABLE_VIDEO;ENABLE_RMGUI;ENABLE_PACKMAN;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_STYLE_SHEETS;ENABLE_LOCALIZATION;PLATFORM_STANDALONE_OSX;PLATFORM_STANDALONE;UNITY_STANDALONE_OSX;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_GAMECENTER;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLUSTERINPUT;ENABLE_VR;ENABLE_AR;ENABLE_SPATIALTRACKING;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_2_0_SUBSET;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_OSX;ENABLE_NATIVE_ARRAY_CHECKS;UNITY_TEAM_LICENSE;DOTWEEN</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.3f1/Unity.app/Contents/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>/Applications/Unity/Hub/Editor/2017.4.3f1/Unity.app/Contents/Managed/UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Demigiant\DOTween\Examples\Basics.cs" />
+     <Compile Include="Assets\Demigiant\DOTween\Examples\Sequences.cs" />
+     <Compile Include="Assets\Foundation Framework\Containers\Item.cs" />
+     <Compile Include="Assets\Foundation Framework\Containers\ItemCategory.cs" />
+     <Compile Include="Assets\Foundation Framework\Containers\ItemDatabase.cs" />
+     <Compile Include="Assets\Foundation Framework\Containers\Scripts\Container.cs" />
+     <Compile Include="Assets\Foundation Framework\Containers\Scripts\ContainerUi.cs" />
+     <Compile Include="Assets\Foundation Framework\Containers\Scripts\DragDummy.cs" />
+     <Compile Include="Assets\Foundation Framework\Containers\Scripts\ItemEntry.cs" />
+     <Compile Include="Assets\Foundation Framework\Containers\Scripts\Slot.cs" />
+     <Compile Include="Assets\Foundation Framework\Currencies\CostCurrencyUi.cs" />
+     <Compile Include="Assets\Foundation Framework\Currencies\CurrencyAmount.cs" />
+     <Compile Include="Assets\Foundation Framework\Currencies\CurrencyDefaultAmount.cs" />
+     <Compile Include="Assets\Foundation Framework\Currencies\CurrencyType.cs" />
+     <Compile Include="Assets\Foundation Framework\Currencies\LayoutCostCurrencyUi.cs" />
+     <Compile Include="Assets\Foundation Framework\Currencies\OwnedCurrencyUi.cs" />
+     <Compile Include="Assets\Foundation Framework\Hub\Initializable.cs" />
+     <Compile Include="Assets\Foundation Framework\Hub\Initializer.cs" />
+     <Compile Include="Assets\Foundation Framework\Input\Finger.cs" />
+     <Compile Include="Assets\Foundation Framework\Input\InputTest.cs" />
+     <Compile Include="Assets\Foundation Framework\Input\TouchManager.cs" />
+     <Compile Include="Assets\Foundation Framework\Localization\Language.cs" />
+     <Compile Include="Assets\Foundation Framework\Localization\LoadSceneEntries.cs" />
+     <Compile Include="Assets\Foundation Framework\Localization\Localization.cs" />
+     <Compile Include="Assets\Foundation Framework\Localization\LocalizedText.cs" />
+     <Compile Include="Assets\Foundation Framework\Localization\Saving &amp; Loading\LocalizationData.cs" />
+     <Compile Include="Assets\Foundation Framework\Localization\Saving &amp; Loading\LocalizationDataHandler.cs" />
+     <Compile Include="Assets\Foundation Framework\Localization\Ui\UiChangeLanguage.cs" />
+     <Compile Include="Assets\Foundation Framework\Options\OptionData.cs" />
+     <Compile Include="Assets\Foundation Framework\Options\OptionHandler.cs" />
+     <Compile Include="Assets\Foundation Framework\Options\OptionsConfig.cs" />
+     <Compile Include="Assets\Foundation Framework\Options\OptionWindow.cs" />
+     <Compile Include="Assets\Foundation Framework\Pooling\Examples\PoolingCSharpObjects\PooledEventHandler.cs" />
+     <Compile Include="Assets\Foundation Framework\Pooling\Examples\PoolingGameObjects\Rocket.cs" />
+     <Compile Include="Assets\Foundation Framework\Pooling\Examples\PoolingGameObjects\RocketLauncher.cs" />
+     <Compile Include="Assets\Foundation Framework\Pooling\Scripts\ObjectPool.cs" />
+     <Compile Include="Assets\Foundation Framework\Pooling\Scripts\ObjectPoolContainer.cs" />
+     <Compile Include="Assets\Foundation Framework\Pooling\Scripts\Pool.cs" />
+     <Compile Include="Assets\Foundation Framework\Pooling\Scripts\PoolManager.cs" />
+     <Compile Include="Assets\Foundation Framework\Profile\ProfileEntryUi.cs" />
+     <Compile Include="Assets\Foundation Framework\Profile\ProfileSelection.cs" />
+     <Compile Include="Assets\Foundation Framework\Profile\ProfileSelectionUi.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\DataAccess\DataContainer.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\DataAccess\DataStorageGenerator.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\DataAccess\IContainer.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\DataAccess\ISerializer.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\DataAccess\IStorageAccess.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\DataAccess\Utils\IoUtils.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\DataPath.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\Handlers\ContainerDataHandler.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\Handlers\CurrencyDataHandler.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\Handlers\DataHandler.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\Handlers\ProfileDataHandler.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\Handlers\UseProfileDataHandler.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\Interfaces\FileStorageAccess.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\Interfaces\JSONSerializer.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\SavableData\ContainerData.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\SavableData\CurrenciesData.cs" />
+     <Compile Include="Assets\Foundation Framework\Saving\Core\SavableData\ProfileData.cs" />
+     <Compile Include="Assets\Foundation Framework\Scene Loader\SceneLoader.cs" />
+     <Compile Include="Assets\Foundation Framework\Scene Loader\SceneLoadingAnimation.cs" />
+     <Compile Include="Assets\Foundation Framework\Scene Loader\SceneTrigger.cs" />
+     <Compile Include="Assets\Foundation Framework\Shop\PurchaseResult.cs" />
+     <Compile Include="Assets\Foundation Framework\Shop\Shop.cs" />
+     <Compile Include="Assets\Foundation Framework\Shop\ShopConfig.cs" />
+     <Compile Include="Assets\Foundation Framework\Shop\ShopEntryUi.cs" />
+     <Compile Include="Assets\Foundation Framework\Shop\ShopUi.cs" />
+     <Compile Include="Assets\Foundation Framework\SoundManager\Scripts\IdGenerator.cs" />
+     <Compile Include="Assets\Foundation Framework\SoundManager\Scripts\Implementations\AmbientScenePlayer.cs" />
+     <Compile Include="Assets\Foundation Framework\SoundManager\Scripts\Implementations\AmbientSoundTrigger.cs" />
+     <Compile Include="Assets\Foundation Framework\SoundManager\Scripts\Implementations\EffectSoundPlayer.cs" />
+     <Compile Include="Assets\Foundation Framework\SoundManager\Scripts\Implementations\EffectSoundTrigger.cs" />
+     <Compile Include="Assets\Foundation Framework\SoundManager\Scripts\Implementations\MusicSoundPlayer.cs" />
+     <Compile Include="Assets\Foundation Framework\SoundManager\Scripts\Implementations\MusicTrigger.cs" />
+     <Compile Include="Assets\Foundation Framework\SoundManager\Scripts\Sound.cs" />
+     <Compile Include="Assets\Foundation Framework\SoundManager\Scripts\SoundConfig.cs" />
+     <Compile Include="Assets\Foundation Framework\SoundManager\Scripts\SoundEvent.cs" />
+     <Compile Include="Assets\Foundation Framework\SoundManager\Scripts\SoundEventPool.cs" />
+     <Compile Include="Assets\Foundation Framework\SoundManager\Scripts\SoundFader.cs" />
+     <Compile Include="Assets\Foundation Framework\SoundManager\Scripts\SoundGroup.cs" />
+     <Compile Include="Assets\Foundation Framework\SoundManager\Scripts\SoundPlayer.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\GenericUiList.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\Notice\UiNotice.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\Notice\UiNoticeObject.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\UiComponents\UiButton.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\UiComponents\UiDropDown.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\UiComponents\UiSlider.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\UiComponents\UiToggle.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\UiComponents\UiUrl.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\UiDialogBox.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\UiPanelAnim.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\UiPanelBase.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\UiPanelTween.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\UiTab.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\UiTabHandler.cs" />
+     <Compile Include="Assets\Foundation Framework\UI\UiTween.cs" />
+     <Compile Include="Assets\Foundation Framework\Utils\ListExtensions.cs" />
+     <Compile Include="Assets\Foundation Framework\Utils\Platforms.cs" />
+     <Compile Include="Assets\Foundation Framework\Utils\Singleton.cs" />
+     <Compile Include="Assets\Foundation Framework\Utils\Timer.cs" />
+     <Compile Include="Assets\Foundation Framework\Utils\TimerExtensions.cs" />
+     <Compile Include="Assets\Foundation Framework\Utils\TweenExtensions.cs" />
+     <None Include="Assets\Demigiant\DOTween\readme.txt" />
+     <None Include="Assets\Demigiant\DOTween\DOTween43.xml" />
+     <None Include="Assets\Foundation Framework\Localization\text files\Main_Spanish.txt" />
+     <None Include="Assets\Foundation Framework\Localization\text files\Hub\Hub_French.txt" />
+     <None Include="Assets\Foundation Framework\Localization\text files\Main_English.txt" />
+     <None Include="Assets\Demigiant\DOTween\DOTween50.xml" />
+     <None Include="Assets\Foundation Framework\Localization\text files\Main_French.txt" />
+     <None Include="Assets\Foundation Framework\UI\Fonts\Acme\OFL.txt" />
+     <None Include="Assets\Foundation Framework\External\JsonDotNet\link.xml" />
+     <None Include="Assets\Foundation Framework\Localization\text files\Hub\Hub_English.txt" />
+     <None Include="Assets\Foundation Framework\Localization\text files\Main_ChineseSimplified.txt" />
+     <None Include="Assets\Demigiant\DOTween\DOTween46.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>/Applications/Unity/Hub/Editor/2017.4.3f1/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>/Applications/Unity/Hub/Editor/2017.4.3f1/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.TestRunner">
+ <HintPath>/Applications/Unity/Hub/Editor/2017.4.3f1/Unity.app/Contents/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
+ </Reference>
+ <Reference Include="nunit.framework">
+ <HintPath>/Applications/Unity/Hub/Editor/2017.4.3f1/Unity.app/Contents/UnityExtensions/Unity/TestRunner/net35/unity-custom/nunit.framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Timeline">
+ <HintPath>/Applications/Unity/Hub/Editor/2017.4.3f1/Unity.app/Contents/UnityExtensions/Unity/Timeline/RuntimeEditor/UnityEngine.Timeline.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.UIAutomation">
+ <HintPath>/Applications/Unity/Hub/Editor/2017.4.3f1/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.GoogleAudioSpatializer">
+ <HintPath>/Applications/Unity/Hub/Editor/2017.4.3f1/Unity.app/Contents/UnityExtensions/Unity/UnityGoogleAudioSpatializer/RuntimeEditor/UnityEngine.GoogleAudioSpatializer.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.HoloLens">
+ <HintPath>/Applications/Unity/Hub/Editor/2017.4.3f1/Unity.app/Contents/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>/Applications/Unity/Hub/Editor/2017.4.3f1/Unity.app/Contents/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>/Users/damiendelmarle/Library/Unity/cache/packages/packages.unity.com/com.unity.analytics@2.0.13/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Purchasing">
+ <HintPath>/Users/damiendelmarle/Library/Unity/cache/packages/packages.unity.com/com.unity.purchasing@0.0.19/UnityEngine.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.StandardEvents">
+ <HintPath>/Users/damiendelmarle/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>/Users/damiendelmarle/Desktop/outburt/Assets/Foundation Framework/External/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween">
+ <HintPath>/Users/damiendelmarle/Desktop/outburt/Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween46">
+ <HintPath>/Users/damiendelmarle/Desktop/outburt/Assets/Demigiant/DOTween/DOTween46.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween50">
+ <HintPath>/Users/damiendelmarle/Desktop/outburt/Assets/Demigiant/DOTween/DOTween50.dll</HintPath>
+ </Reference>
+ <Reference Include="DOTween43">
+ <HintPath>/Users/damiendelmarle/Desktop/outburt/Assets/Demigiant/DOTween/DOTween43.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
