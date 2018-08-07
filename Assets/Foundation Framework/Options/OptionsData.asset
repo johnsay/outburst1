@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f1e19e25341c42a2bc9b8681d82d094, type: 3}
+  m_Name: OptionsData
+  m_EditorClassIdentifier: 
+  EnableSoundTab: 1
+  ExposedAudioGroups:
+  - GroupName: Main
+    GroupValue: 0
+  - GroupName: Ambient
+    GroupValue: 0
+  - GroupName: Music
+    GroupValue: 0
+  - GroupName: Ui
+    GroupValue: 0
+  - GroupName: Effect
+    GroupValue: 0
+  EnableQualityTab: 1
+  CanSetResolution: 1
+  DefaultResolutionIndex: 0
+  SupportedResolution:
+  - {x: 800, y: 600}
+  - {x: 1024, y: 768}
+  CanSetFullScreen: 1
+  CanSetVsync: 1
+  CanSetEconomyMode: 1
+  CanSetTargetFps: 1
+  DefaultFpsIndex: 0
+  SupportedFps: 1e0000003c000000
+  EnableGameplayTab: 1
+  CansSetDifficulty: 0
+  Difficulties:
+  - Easy
+  - Normal
+  - Hard
+  CanSetSensitiviy: 0
+  EnableOtherTab: 1
+  UrlLinks:
+  - UrlName: Visit us !
+    Adress: http://www.google.com/
+    Icon: {fileID: 21300000, guid: 5f0e0a24a91c84d1c938ac536073e10c, type: 3}
+  - UrlName: Follow us on Youtube
+    Adress: http://www.youtube.com/
+    Icon: {fileID: 21300000, guid: 5f0e0a24a91c84d1c938ac536073e10c, type: 3}
+  CanResetData: 1

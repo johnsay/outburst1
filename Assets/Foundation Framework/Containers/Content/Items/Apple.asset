@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab05c848f2a047db93e835d3e283767, type: 3}
+  m_Name: Apple
+  m_EditorClassIdentifier: 
+  ItemName: Apple
+  ItemDescription: tasty food
+  Stackable: 1
+  Icon: {fileID: 21300000, guid: 75474dbb43a2f4e3fae31dd25ce3d27c, type: 3}
+  Category: {fileID: 11400000, guid: 94fda9ac84142407f918340b28fb4b79, type: 2}
+  SellPrice:
+  - Currency: {fileID: 11400000, guid: dd851ba9d82a448e39a3bf230e135cc3, type: 2}
+    Count: 1
+  BuyPrice:
+  - Currency: {fileID: 11400000, guid: dd851ba9d82a448e39a3bf230e135cc3, type: 2}
+    Count: 2

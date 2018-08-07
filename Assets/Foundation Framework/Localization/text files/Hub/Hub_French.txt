@@ -1,0 +1,22 @@
+[TAG] ""
+[MSG] ""
+
+[TAG] "Inventory"
+[MSG] "Inventaire"
+
+[TAG] "Shop"
+[MSG] "Boutique"
+
+[TAG] "Buy"
+[MSG] "Acheter"
+
+[TAG] "Close"
+[MSG] "Fermer"
+
+//ITEMS:
+
+[TAG] "Apple"
+[MSG] "Pomme"
+
+[TAG] "Rock"
+[MSG] "Rocher"

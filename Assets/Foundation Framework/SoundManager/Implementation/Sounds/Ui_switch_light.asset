@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a523ff2c9a5c3474987f1035318d7560, type: 3}
+  m_Name: Ui_switch_light
+  m_EditorClassIdentifier: 
+  Volume: 1
+  MinPitch: 1
+  MaxPitch: 1
+  DelayAtStart: 0
+  FadeInTime: 0
+  FadeOutTime: 0
+  Looping: 0
+  PoolSize: 0
+  Clips:
+  - {fileID: 8300000, guid: 94930c7ac27e8400aaad183b47767d0b, type: 3}
+  Source: {fileID: 0}
