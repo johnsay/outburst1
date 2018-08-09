@@ -11,4 +11,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 910f870bac04a4f88998fa9df4eaaf88, type: 3}
   m_Name: Pack
   m_EditorClassIdentifier: 
-  Categories: []
+  Pack:
+    Description: 
+    Categories:
+    - Description: First grade
+      SubCategories:
+      - Description: Science
+        Questions:
+          Description: 
+      - Description: Math
+        Questions:
+          Description: 
+      Questions:
+        Description: 
+    - Description: Second grade
+      SubCategories:
+      - Description: Science
+        Questions:
+          Description: 
+      - Description: Math
+        Questions:
+          Description: 
+      Questions:
+        Description: 
+    - Description: Third grade
+      SubCategories:
+      - Description: Science
+        Questions:
+          Description: 
+      - Description: Math
+        Questions:
+          Description: 
+      Questions:
+        Description: 

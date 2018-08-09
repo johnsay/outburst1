@@ -1,9 +1,9 @@
 ﻿using System;
 
 [Serializable]
-public class Category
+public class SubCategory
 {
     public string Description;
-    public SubCategory[] SubCategories;
+
     public QuestionGroup Questions;
 }
