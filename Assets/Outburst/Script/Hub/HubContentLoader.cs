@@ -19,11 +19,13 @@ public class HubContentLoader : MonoBehaviour
 	[SerializeField] private UiSubCategory _subCategoryPrefab;
 	//CACHED
 	private List<UiCategory> _categories = new List<UiCategory>();
+	
 	#endregion
 
 	private void Awake()
 	{
 		Instance = this;
+		//PRELOAD SECTIONS
 		DisplayCategories(_localDatabase.Pack);
 	}
 
@@ -52,7 +54,7 @@ public class HubContentLoader : MonoBehaviour
 		//cache it
 		_categories.Add(instance);
 		//hide it
-		instance.transform.localScale = Vector3.zero;;
+		instance.transform.ChangeLocalScaleY(0);
 	}
 
 
