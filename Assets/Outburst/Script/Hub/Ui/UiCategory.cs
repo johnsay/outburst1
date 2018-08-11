@@ -18,6 +18,7 @@ public class UiCategory : MonoBehaviour
         _description.text = _category.Description;
     }
 
+    
     public void Select()
     {
         if (HubContentLoader.Instance)

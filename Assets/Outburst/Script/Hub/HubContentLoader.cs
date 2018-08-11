@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using DG.Tweening;
+using FoundationFramework.Pools;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,21 +13,33 @@ public class HubContentLoader : MonoBehaviour
 	
 	[SerializeField] private LocalPackDatabase _localDatabase;
 
+	[SerializeField] private LayoutGroup _selectedParent;
 	[SerializeField] private LayoutGroup _categoriesParent;
 	[SerializeField] private LayoutGroup _subCategoriesParent;
 	//PREFABS
+	[SerializeField] private UiSelectedSection _selectedPrefab;
 	[SerializeField] private UiCategory _categoryPrefab;
 	[SerializeField] private UiSubCategory _subCategoryPrefab;
 	//CACHED
 	private List<UiCategory> _categories = new List<UiCategory>();
-	
+	private List< UiSelectedSection> _selections = new List<UiSelectedSection>();
 	#endregion
 
 	private void Awake()
 	{
 		Instance = this;
-		//PRELOAD SECTIONS
+		PreloadPrefabs();
 		DisplayCategories(_localDatabase.Pack);
+	}
+
+	private void PreloadPrefabs()
+	{
+		for (int i = 0; i < 10; i++)
+		{
+			var instance = Instantiate(_selectedPrefab, _selectedParent.transform);
+			instance.gameObject.SetActive(false);
+			_selections.Add(instance);
+		}
 	}
 
 	private void OnDestroy()
