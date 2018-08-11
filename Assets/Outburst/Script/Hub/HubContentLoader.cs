@@ -29,7 +29,7 @@ public class HubContentLoader : MonoBehaviour
 	{
 		Instance = this;
 		PreloadPrefabs();
-		DisplayCategories(_localDatabase.Pack);
+		DisplayPack(_localDatabase.Pack);
 	}
 
 	private void PreloadPrefabs()
@@ -47,7 +47,7 @@ public class HubContentLoader : MonoBehaviour
 		Instance = null;
 	}
 
-	private void DisplayCategories(Pack pack)
+	private void DisplayPack(Pack pack)
 	{
 		foreach (var category in pack.Categories)
 		{
@@ -69,7 +69,6 @@ public class HubContentLoader : MonoBehaviour
 		//hide it
 		instance.transform.ChangeLocalScaleY(0);
 	}
-
 
 	public void SelectCategory(Category category)
 	{
