@@ -4,5 +4,5 @@
 public class QuestionGroup
 {
 	public string Description;
-	//Question[]
+	public Question[] Questions;
 }

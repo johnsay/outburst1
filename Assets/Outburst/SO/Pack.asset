@@ -17,30 +17,21 @@ MonoBehaviour:
     - Description: First grade
       SubCategories:
       - Description: Science
-        Questions:
-          Description: 
+        Questions: {fileID: 0}
       - Description: Math
-        Questions:
-          Description: 
-      Questions:
-        Description: 
+        Questions: {fileID: 0}
+      Questions: {fileID: 0}
     - Description: Second grade
       SubCategories:
       - Description: Science
-        Questions:
-          Description: 
+        Questions: {fileID: 0}
       - Description: Math
-        Questions:
-          Description: 
-      Questions:
-        Description: 
+        Questions: {fileID: 0}
+      Questions: {fileID: 0}
     - Description: Third grade
       SubCategories:
       - Description: Science
-        Questions:
-          Description: 
+        Questions: {fileID: 0}
       - Description: Math
-        Questions:
-          Description: 
-      Questions:
-        Description: 
+        Questions: {fileID: 0}
+      Questions: {fileID: 0}

@@ -13,15 +13,17 @@ public class HugContentLoader2 : MonoBehaviour
     
     [SerializeField] private LayoutGroup _selectedGroup;
     [SerializeField] private LayoutGroup _categoriesParent;
-    [SerializeField] private LayoutGroup _subCategoriesParent;
+
     //PREFABS
     [SerializeField] private UiSelectedSection _selectedPrefab;
     [SerializeField] private UiCategory _categoryPrefab;
     [SerializeField] private UiSubCategory _subCategoryPrefab;
+    [SerializeField] private UiQuestionGroup _questionGroupPrefab;
     //CACHED
     private List<UiCategory> _categories = new List<UiCategory>();
     private List<UiSubCategory> _subCategories = new List<UiSubCategory>();
-    private List< UiSelectedSection> _selections = new List<UiSelectedSection>();
+    private List<UiQuestionGroup> _questionGroup = new List<UiQuestionGroup>();
+    private List<UiSelectedSection> _selections = new List<UiSelectedSection>();
     #endregion
     //cache current pack
     //list of previousSelection
@@ -82,22 +84,29 @@ public class HugContentLoader2 : MonoBehaviour
             instance.transform.ChangeLocalScaleY(0);
         }
     }
+    
 
-    private void DisableCategories()
+    private void DisableAllCategories()
     {
         foreach (var category in _categories)
         {
             Destroy(category.gameObject);
         }
         _categories.Clear();
+        
+        foreach (var subcategories in _subCategories)
+        {
+            Destroy(subcategories.gameObject);
+        }
+        _subCategories.Clear();
     }
 
     private void LoadSubCategories(SubCategory[] subcategories)
     {
-        DisableCategories();
+        DisableAllCategories();
         foreach (var subCategory in subcategories)
         {
-            var instance = Instantiate(_subCategoryPrefab, _subCategoriesParent.transform);
+            var instance = Instantiate(_subCategoryPrefab, _categoriesParent.transform);
             //configure it
             instance.Setup(subCategory);
             //cache it
@@ -105,6 +114,15 @@ public class HugContentLoader2 : MonoBehaviour
             //hide it
             instance.transform.ChangeLocalScaleY(0);
         }
+    }
+
+    private void LoadQuestionGroup(QuestionGroup questions)
+    {
+        DisableAllCategories();
+        
+        //instantiate question Group
+        var instance = Instantiate(_questionGroupPrefab, _categoriesParent.transform);
+        _questionGroup.Add(instance);
     }
 
     //receive inputs from ui button of categories
@@ -121,10 +139,24 @@ public class HugContentLoader2 : MonoBehaviour
 
     public void SelectCategory(Category category)
     {
-        LoadSelections(new string[1]{category.Description});
-        
+        LoadSelections(new[]{category.Description});
+
+        LoadSubCategories(category.SubCategories);
     }
     //click on subcategory
+    public void SelectSubCategory(SubCategory subCategory)
+    {
+        LoadSelections(new[]{"Previous",subCategory.Description});
+
+        if (subCategory.Questions)
+        {
+            LoadQuestionGroup(subCategory.Questions.Questions);
+        }
+        else
+        {
+           Debug.LogWarning(subCategory+" is missing questions"); 
+        }
+    }
     
     //click on previous selection
 

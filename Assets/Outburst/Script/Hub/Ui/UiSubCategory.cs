@@ -20,9 +20,9 @@ public class UiSubCategory : MonoBehaviour
 
     public void Select()
     {
-        if (HubContentLoader.Instance)
+        if (HugContentLoader2.Instance)
         {
-            HubContentLoader.Instance.SelectSubCategory(_category);
+            HugContentLoader2.Instance.SelectSubCategory(_category);
         }
     }
 }

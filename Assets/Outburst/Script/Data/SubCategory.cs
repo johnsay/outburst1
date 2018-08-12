@@ -5,5 +5,5 @@ public class SubCategory
 {
     public string Description;
 
-    public QuestionGroup Questions;
+    public QuestionsPack Questions;
 }
