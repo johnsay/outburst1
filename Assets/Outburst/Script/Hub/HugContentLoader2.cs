@@ -13,6 +13,7 @@ public class HugContentLoader2 : MonoBehaviour
     
     [SerializeField] private LayoutGroup _selectedGroup;
     [SerializeField] private LayoutGroup _categoriesParent;
+    [SerializeField] private LayoutGroup _contentParent;
 
     //PREFABS
     [SerializeField] private UiSelectedSection _selectedPrefab;
@@ -121,7 +122,8 @@ public class HugContentLoader2 : MonoBehaviour
         DisableAllCategories();
         
         //instantiate question Group
-        var instance = Instantiate(_questionGroupPrefab, _categoriesParent.transform);
+        var instance = Instantiate(_questionGroupPrefab, _contentParent.transform);
+        instance.Setup(questions);
         _questionGroup.Add(instance);
     }
 

@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -395,12 +395,14 @@ MonoBehaviour:
   _localDatabase: {fileID: 11400000, guid: b0511b334407c434aa30532f60b6ba72, type: 2}
   _selectedGroup: {fileID: 31794120}
   _categoriesParent: {fileID: 652408519}
-  _subCategoriesParent: {fileID: 652408519}
+  _contentParent: {fileID: 1940914188}
   _selectedPrefab: {fileID: 114750047485031850, guid: ecdd7f6feff864812a78e2e10ec31d3d,
     type: 2}
   _categoryPrefab: {fileID: 114432849327130854, guid: ff8f391b54eef44e8bc3a0043f5ef586,
     type: 2}
   _subCategoryPrefab: {fileID: 114587773580992312, guid: 3fa2bce50665b47c89ead30e23d9b568,
+    type: 2}
+  _questionGroupPrefab: {fileID: 114498600190407010, guid: 5787c129a9f154391a664da69e117267,
     type: 2}
 --- !u!114 &1443865376
 MonoBehaviour:
