@@ -8,8 +8,8 @@ namespace FoundationFramework.Editor
 {
     public class SupportWindow : EditorWindow
     {
-        private const string Version = "Foundation Version 1.0.0";
-        private const string EditorAssetsPath = "Assets/Foundation Framework/Editor/Assets/";
+        private const string Version = "Foundation Version 1.1.0";
+        
         private const string StoreAdress = "content/117861";
         private const string WindowName = "Toolbar";
         private const string MenuPath = "Tools/Foundation Framework/Open Toolbar";
@@ -44,8 +44,8 @@ namespace FoundationFramework.Editor
         private void OnEnable()
         {
             _toolbarOptions = new GUIContent[2];
-            _toolbarOptions[0] = new GUIContent("<size=14><b> Tools</b></size>\n <size=11>Utilities to simplify \n your workflow.</size>",GetEditorTexture("cog"), "");
-            _toolbarOptions[1] = new GUIContent("<size=14><b> Links</b></size>\n <size=11>Documentation \n and support.</size>", GetEditorTexture("link"), "");
+            _toolbarOptions[0] = new GUIContent("<size=14><b> Tools</b></size>\n <size=11>Utilities to simplify \n your workflow.</size>",EditorUtility.GetEditorTexture("cog"), "");
+            _toolbarOptions[1] = new GUIContent("<size=14><b> Links</b></size>\n <size=11>Documentation \n and support.</size>", EditorUtility.GetEditorTexture("link"), "");
 #if DOTWEEN
             _toolbarHeight = GUILayout.Height(50);
     #endif
@@ -131,34 +131,34 @@ namespace FoundationFramework.Editor
             {
                 case 0:
                     EditorGUILayout.Space();
-                    if (ButtonPressed("Open save folder","open_save"))
+                    if (EditorUtility.ButtonPressed("Open save folder","open_save"))
                         SaveEditor.OpenDataFolder();
                     EditorGUILayout.LabelField(" Play First to create the folder.", _greyText);
 
                     EditorGUILayout.Space();
-                    if (ButtonPressed("Delete all saves","folder_delete"))
+                    if (EditorUtility.ButtonPressed("Delete all saves","folder_delete"))
                         SaveEditor.ClearSaveFolder();
                     EditorGUILayout.LabelField(" Data folder + all profiles.", _greyText);
 
                     EditorGUILayout.Space();
-                    if (ButtonPressed("Go to Scenes","unity"))
+                    if (EditorUtility.ButtonPressed("Go to Scenes","unity"))
                         EditorMenu.PingInProject("Assets/Foundation Framework/Scenes");
                     EditorGUILayout.LabelField(" Select the scenes folder.", _greyText);
                     break;
 
                 case 1:
                     EditorGUILayout.Space();
-                    if (ButtonPressed("Send an email","mail"))
+                    if (EditorUtility.ButtonPressed("Send an email","mail"))
                         EditorMenu.AskQuestionByEmail();
                     EditorGUILayout.LabelField(" Ask any question here.", _greyText);
 
                     EditorGUILayout.Space();
-                    if (ButtonPressed("Documentation","docs"))
+                    if (EditorUtility.ButtonPressed("Documentation","docs"))
                         EditorMenu.OpenFoundationDocumentation();
                     EditorGUILayout.LabelField(" All modules explained.", _greyText);
 
                     EditorGUILayout.Space();
-                    if (ButtonPressed("Developer Website","tiny_tree"))
+                    if (EditorUtility.ButtonPressed("Developer Website","tiny_tree"))
                         EditorMenu.OpenDeveloperWebsite();
                     EditorGUILayout.LabelField(" Games & assets made.", _greyText);
                     break;
@@ -170,23 +170,13 @@ namespace FoundationFramework.Editor
             GUILayout.FlexibleSpace();
             EditorGUILayout.LabelField(new GUIContent(Version), _centeredVersionLabel);
             EditorGUILayout.Space();
-            if (GUILayout.Button(new GUIContent("<size=11> Please consider leaving us a review.</size>",GetEditorTexture("star"), ""), _reviewBanner, _bannerHeight))
+            if (GUILayout.Button(new GUIContent("<size=11> Please consider leaving us a review.</size>",EditorUtility.GetEditorTexture("star"), ""), _reviewBanner, _bannerHeight))
                 UnityEditorInternal.AssetStore.Open(StoreAdress);
         }
         
         #region Utilities
 
-        private Texture2D GetEditorTexture(string textureName)
-        {
-            return EditorGUIUtility.Load(EditorAssetsPath + textureName + ".png") as Texture2D;
-        }
-
-        private bool ButtonPressed(string buttonName, string buttonIcon = null)
-        {
-            var buttonContent = new GUIContent("   "+buttonName,GetEditorTexture(buttonIcon));
-            
-            return GUILayout.Button(buttonContent, EditorStyles.label);
-        }
+       
 
         #endregion
     }

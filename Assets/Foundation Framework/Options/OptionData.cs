@@ -8,7 +8,7 @@ namespace FoundationFramework
     [Serializable]
     public class OptionData
     {
-        public bool Initialized = false;
+        public bool Initialized;
         
         #region [[ SOUNDS ]]
         public Dictionary<string, float> SoundGroupValues = new Dictionary<string, float>();

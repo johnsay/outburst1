@@ -1,5 +1,4 @@
-﻿using System.IO;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace FoundationFramework.Language
@@ -15,10 +14,7 @@ namespace FoundationFramework.Language
 		private Language _currentLanguage;
 		private readonly Dictionary<string, string> _persistantEntries = new Dictionary<string, string>();
 		private readonly Dictionary<string, string> _localEntries = new Dictionary<string, string>();
-		private const string CodeTag = "[TAG] \"";
-		private const string CodeMsg = "[MSG] \"";
-		private const string CodeLineBreak = "[LB]";
-		private const string Utf8LineBreak = "\n";
+		private ISerializer _serializer;
 		private const string MissingTranslation = "[Missing]";
 
 		#endregion
@@ -27,6 +23,7 @@ namespace FoundationFramework.Language
 
 		private void Awake()
 		{
+			_serializer = new JsonSerializer();
 			Initialize();
 		}
 
@@ -35,45 +32,25 @@ namespace FoundationFramework.Language
 			_instance = null;
 		}
 
+		//can load remotely the files from preloading scene then save to a file which are loaded here
 		private void AddEntries(IEnumerable<TextAsset> source, IDictionary<string, string> destination)
 		{
 			foreach (var file in source)
 			{
-				if (file.name.Contains(_currentLanguage.ToString()))
+				var content = _serializer.Unserialize<Dictionary<string, Dictionary<Language, string>>>(file.text);
+				if (content != null)
 				{
-					var result = new StringReader(file.text);
-					string currentLine;
-					var msg = string.Empty;
-
-					while ((currentLine = result.ReadLine()) != null)
+					foreach (var entry in content)
 					{
-						if (currentLine.StartsWith(CodeTag))
+						if (string.IsNullOrEmpty(entry.Key) == false)
 						{
-							var tagLenght = currentLine.Length - CodeTag.Length - 1;
-							var tagTitle = currentLine.Substring(CodeTag.Length, tagLenght);
-							currentLine = result.ReadLine();
-
-							if (currentLine != null)
-							{
-								if (currentLine.StartsWith(CodeMsg))
-								{
-									var msgLength = currentLine.Length - CodeMsg.Length - 1;
-									msg = currentLine.Substring(CodeMsg.Length, msgLength).Replace(CodeLineBreak, Utf8LineBreak);
-								}
-							}
-
-							if (string.IsNullOrEmpty(msg))
-							{
-								msg = string.Empty;
-							}
-							else
-							{
-								destination.Add(tagTitle, msg);
-							}
+							destination.Add(entry.Key, entry.Value[_currentLanguage]);
 						}
 					}
 				}
+
 			}
+	
 		}
 		#endregion 
 		

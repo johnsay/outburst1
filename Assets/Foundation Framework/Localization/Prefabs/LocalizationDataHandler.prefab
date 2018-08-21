@@ -65,7 +65,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dataHandler: {fileID: 114221211505205388}
   _persistantFiles:
-  - {fileID: 4900000, guid: 7c6671968dd484abc980e3435c911629, type: 3}
-  - {fileID: 4900000, guid: a7ca06f568ade49afbfef35d68371aa0, type: 3}
-  - {fileID: 4900000, guid: d846741b9e22645f0974392c5e0f46b8, type: 3}
-  - {fileID: 4900000, guid: feaedf54372c845c4aa1a24127d1551a, type: 3}
+  - {fileID: 4900000, guid: b42b7988a852c4bcf866bbfc4d04492e, type: 3}

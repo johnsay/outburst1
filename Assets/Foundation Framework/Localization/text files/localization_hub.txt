@@ -1,0 +1,58 @@
+{
+  "Inventory": {
+    "English": "Inventory",
+    "French": "Inventaire",
+    "German": "Inventory",
+    "Spanish": "Inventory",
+    "ChineseTraditional": "Inventory",
+    "ChineseSimplified": "Inventory"
+  },
+  "Shop": {
+    "English": "Shop",
+    "French": "Magasin",
+    "German": "Shop",
+    "Spanish": "Shop",
+    "ChineseTraditional": "Shop",
+    "ChineseSimplified": "Shop"
+  },
+  "Buy": {
+    "English": "Buy",
+    "French": "Acheter",
+    "German": "Buy",
+    "Spanish": "Buy",
+    "ChineseTraditional": "Buy",
+    "ChineseSimplified": "Buy"
+  },
+  "Sell": {
+    "English": "Sell",
+    "French": "Vendre",
+    "German": "Sell",
+    "Spanish": "Sell",
+    "ChineseTraditional": "Sell",
+    "ChineseSimplified": "Sell"
+  },
+  "Close": {
+    "English": "Close",
+    "French": "Fermer",
+    "German": "Close",
+    "Spanish": "Close",
+    "ChineseTraditional": "Close",
+    "ChineseSimplified": "Close"
+  },
+  "Apple": {
+    "English": "Apple",
+    "French": "Pomme",
+    "German": "Apple",
+    "Spanish": "Apple",
+    "ChineseTraditional": "Apple",
+    "ChineseSimplified": "Apple"
+  },
+  "Rock": {
+    "English": "Rock",
+    "French": "Rocher",
+    "German": "Rock",
+    "Spanish": "Rock",
+    "ChineseTraditional": "Rock",
+    "ChineseSimplified": "Rock"
+  }
+}

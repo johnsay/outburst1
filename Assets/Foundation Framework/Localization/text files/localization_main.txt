@@ -1,0 +1,186 @@
+{
+  "Enter": {
+    "English": "Enter",
+    "French": "Entrer",
+    "German": "Enter",
+    "Spanish": "Enter",
+    "ChineseTraditional": "Enter",
+    "ChineseSimplified": "Enter"
+  },
+  "Back": {
+    "English": "Back",
+    "French": "Retour",
+    "German": "Back",
+    "Spanish": "Back",
+    "ChineseTraditional": "Back",
+    "ChineseSimplified": "Back"
+  },
+  "Create your profile": {
+    "English": "Create your profile",
+    "French": "Cree ton profile",
+    "German": "Create your profile",
+    "Spanish": "Create your profile",
+    "ChineseTraditional": "Create your profile",
+    "ChineseSimplified": "Create your profile"
+  },
+  "Profile": {
+    "English": "Profile",
+    "French": "Profile",
+    "German": "Profile",
+    "Spanish": "Profile",
+    "ChineseTraditional": "Profile",
+    "ChineseSimplified": "Profile"
+  },
+  "Enter name": {
+    "English": "Enter name",
+    "French": "Entrer nom",
+    "German": "Enter name",
+    "Spanish": "Enter name",
+    "ChineseTraditional": "Enter name",
+    "ChineseSimplified": "Enter name"
+  },
+  "Main": {
+    "English": "Main",
+    "French": "Principale",
+    "German": "Main",
+    "Spanish": "Main",
+    "ChineseTraditional": "Main",
+    "ChineseSimplified": "Main"
+  },
+  "Music": {
+    "English": "Music",
+    "French": "Musique",
+    "German": "Music",
+    "Spanish": "Music",
+    "ChineseTraditional": "Music",
+    "ChineseSimplified": "Music"
+  },
+  "Ambient": {
+    "English": "Ambient",
+    "French": "Ambience",
+    "German": "Ambient",
+    "Spanish": "Ambient",
+    "ChineseTraditional": "Ambient",
+    "ChineseSimplified": "Ambient"
+  },
+  "Effect": {
+    "English": "Effect",
+    "French": "Effet",
+    "German": "Effect",
+    "Spanish": "Effect",
+    "ChineseTraditional": "Effect",
+    "ChineseSimplified": "Effect"
+  },
+  "Ui": {
+    "English": "Ui",
+    "French": "Interface",
+    "German": "Ui",
+    "Spanish": "Ui",
+    "ChineseTraditional": "Ui",
+    "ChineseSimplified": "Ui"
+  },
+  "Resolutions": {
+    "English": "Resolutions",
+    "French": "Resolutions",
+    "German": "Resolutions",
+    "Spanish": "Resolutions",
+    "ChineseTraditional": "Resolutions",
+    "ChineseSimplified": "Resolutions"
+  },
+  "Full screen": {
+    "English": "Full screen",
+    "French": "Plein ecran",
+    "German": "Full screen",
+    "Spanish": "Full screen",
+    "ChineseTraditional": "Full screen",
+    "ChineseSimplified": "Full screen"
+  },
+  "Use Vsync": {
+    "English": "Use Vsync",
+    "French": "Utiliser Vsync",
+    "German": "Use Vsync",
+    "Spanish": "Use Vsync",
+    "ChineseTraditional": "Use Vsync",
+    "ChineseSimplified": "Use Vsync"
+  },
+  "Economy mode": {
+    "English": "Economy mode",
+    "French": "Mode Eco",
+    "German": "Economy mode",
+    "Spanish": "Economy mode",
+    "ChineseTraditional": "Economy mode",
+    "ChineseSimplified": "Economy mode"
+  },
+  "Refresh rate": {
+    "English": "Refresh rate",
+    "French": "Frequence",
+    "German": "Refresh rate",
+    "Spanish": "Refresh rate",
+    "ChineseTraditional": "Refresh rate",
+    "ChineseSimplified": "Refresh rate"
+  },
+  "Difficulty": {
+    "English": "Difficulty",
+    "French": "Difficulte",
+    "German": "Difficulty",
+    "Spanish": "Difficulty",
+    "ChineseTraditional": "Difficulty",
+    "ChineseSimplified": "Difficulty"
+  },
+  "Sensitivity": {
+    "English": "Sensitivity",
+    "French": "Sensibilite",
+    "German": "Sensitivity",
+    "Spanish": "Sensitivity",
+    "ChineseTraditional": "Sensitivity",
+    "ChineseSimplified": "Sensitivity"
+  },
+  "Reset Data": {
+    "English": "Reset Data",
+    "French": "Reset Donnee",
+    "German": "Reset Data",
+    "Spanish": "Reset Data",
+    "ChineseTraditional": "Reset Data",
+    "ChineseSimplified": "Reset Data"
+  },
+  "Loading": {
+    "English": "Loading",
+    "French": "Chargement",
+    "German": "Loading",
+    "Spanish": "Loading",
+    "ChineseTraditional": "Loading",
+    "ChineseSimplified": "Loading"
+  },
+  "Sounds": {
+    "English": "Sounds",
+    "French": "Sounds",
+    "German": "Sounds",
+    "Spanish": "Sounds",
+    "ChineseTraditional": "Sounds",
+    "ChineseSimplified": "Sounds"
+  },
+  "Quality": {
+    "English": "Quality",
+    "French": "Quality",
+    "German": "Quality",
+    "Spanish": "Quality",
+    "ChineseTraditional": "Quality",
+    "ChineseSimplified": "Quality"
+  },
+  "Gameplay": {
+    "English": "Gameplay",
+    "French": "Gameplay",
+    "German": "Gameplay",
+    "Spanish": "Gameplay",
+    "ChineseTraditional": "Gameplay",
+    "ChineseSimplified": "Gameplay"
+  },
+  "Other": {
+    "English": "Other",
+    "French": "Other",
+    "German": "Other",
+    "Spanish": "Other",
+    "ChineseTraditional": "Other",
+    "ChineseSimplified": "Other"
+  }
+}

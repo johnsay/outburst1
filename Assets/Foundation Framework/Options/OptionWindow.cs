@@ -92,31 +92,26 @@ namespace FoundationFramework.UI
                         string convertedResolution = (int)_config.SupportedResolution[i].x+" x "+(int)_config.SupportedResolution[i].y;
                         listResolutions.Add(convertedResolution);
                     }
-
-                    string windowedTranslation = Language.Localization.Translate("Resolutions");
-                    resolutionDropdown.Setup(windowedTranslation,OnSetResolution,listResolutions);
+                    resolutionDropdown.Setup("Resolutions",OnSetResolution,listResolutions);
                
                 }
 
                 if (_config.CanSetFullScreen)
                 {
                     var setFullScreenToggle = Instantiate(_prefabToggle,_tabQuality.transform);
-                    string fullScreenTranslation = Language.Localization.Translate("Full Screen");
-                    setFullScreenToggle.Setup(fullScreenTranslation,OnSetFullScreen);
+                    setFullScreenToggle.Setup("Full screen",OnSetFullScreen);
                 }
                 
                 if (_config.CanSetVsync)
                 {
                     var setVsyncToggle = Instantiate(_prefabToggle,_tabQuality.transform);
-                    string vsyncTranslation = Language.Localization.Translate("Use Vsync");
-                    setVsyncToggle.Setup(vsyncTranslation,OnSetVsync);
+                    setVsyncToggle.Setup("Use Vsync",OnSetVsync);
                 }
                 
                 if (_config.CanSetEconomyMode)
                 {
                     var setEcoModeToggle = Instantiate(_prefabToggle,_tabQuality.transform);
-                    string ecoModeTranslation = Language.Localization.Translate("Economy mode");
-                    setEcoModeToggle.Setup(ecoModeTranslation,OnSetEconomyMode);
+                    setEcoModeToggle.Setup("Economy mode",OnSetEconomyMode);
                 }
                 
                 if (_config.CanSetTargetFps)
@@ -130,8 +125,7 @@ namespace FoundationFramework.UI
                         listResolutions.Add(convertedFps);
                     }
 
-                    string targetFpsTranslation = Language.Localization.Translate("Refresh rate");
-                    fpsDropdown.Setup(targetFpsTranslation,OnSetTargetFps,listResolutions);
+                    fpsDropdown.Setup("Refresh rate",OnSetTargetFps,listResolutions);
                
                 }
             }
@@ -152,17 +146,14 @@ namespace FoundationFramework.UI
                         string convertedDifficulty = _config.Difficulties[i];
                         listDifficulties.Add(convertedDifficulty);
                     }
-
-                    string difficultyTranslation = Language.Localization.Translate("Difficulty");
-                    difficultyDropDown.Setup(difficultyTranslation,OnSetDifficulty,listDifficulties);
+                    difficultyDropDown.Setup("Difficulty",OnSetDifficulty,listDifficulties);
                
                 }
                 
                 if (_config.CanSetSensitiviy)
                 {
                     var slider = Instantiate(_prefabSlider, _tabGameplay.transform);
-                    string sensitivityTranslation = Language.Localization.Translate("Sensitivity");
-                    slider.Setup(sensitivityTranslation,OnSetSensitivity,0.1f,2);
+                    slider.Setup("Sensitivity",OnSetSensitivity,0.1f,2);
                 }
             }
         }
@@ -174,8 +165,7 @@ namespace FoundationFramework.UI
                 if (_config.CanResetData)
                 {
                     var button = Instantiate(_prefabButton, _tabOther.transform);
-                    string resetTranslation = Language.Localization.Translate("Reset Data");
-                    button.Setup(resetTranslation,OnResetData);
+                    button.SetupTranslated("Reset Data",OnResetData);
                 }
 
                 for (int i = 0; i < _config.UrlLinks.Length; i++)

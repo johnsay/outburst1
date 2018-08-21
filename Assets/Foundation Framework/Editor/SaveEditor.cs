@@ -15,7 +15,7 @@ namespace FoundationFramework
             }
             else
             {
-                EditorUtility.RevealInFinder(DataPath.Get); 
+                UnityEditor.EditorUtility.RevealInFinder(DataPath.Get); 
             }
 
             
