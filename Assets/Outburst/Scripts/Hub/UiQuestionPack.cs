@@ -21,5 +21,6 @@ public class UiQuestionPack : MonoBehaviour
     public void OnUse()
     {
         //UiHierarchy.Instance.LoadPreviousSection(_node);
+        UiQuestionPanel.Instance.Load(_questionPack);
     }
 }

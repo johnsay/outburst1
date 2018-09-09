@@ -6,7 +6,7 @@ public class PlaceholderContent
 {
 	public static TreeNode<Category> Generate()
 	{
-		var root = new TreeNode<Category>(BuildNew("content pack"));
+		var root = new TreeNode<Category>(BuildNew("Free content pack"));
 
 		string[] type1 = {"Kindergarden", "MiddleSchool", "High School"};
 		string[] type2 = {"math", "sport", "music"};
