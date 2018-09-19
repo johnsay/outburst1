@@ -1,13 +1,28 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using TreeView;
-using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class PlaceholderContent 
 {
-	public static TreeNode<Category> Generate()
+	public static TreeNode<Category> Generate(ContentTree source)
 	{
 		var root = new TreeNode<Category>(BuildNew("Free content pack"));
 
+	  foreach (var qp in source.QuestionPacks)
+	  {
+	    var cat = BuildNew(qp.Name);
+	    var child = root.AddChild(cat);
+
+	    foreach (var subchilds in qp.Childs)
+	    {
+	      var subcat = BuildNew(subchilds.Name);
+	      foreach (var final in subchilds.QuestionsGroup)
+	      {
+	       
+	      }
+	    }
+	  }
 		string[] type1 = {"Kindergarden", "MiddleSchool", "High School"};
 		string[] type2 = {"math", "sport", "music"};
 		foreach (var entry in type1)
@@ -51,4 +66,19 @@ public class PlaceholderContent
         
 		return pack;
 	}
+
+  [Serializable]
+  public class PlaceHolderCategory
+  {
+    public string Name;  //grade
+    public PlaceHolderSubCategory[] Childs;
+
+  }
+
+  [Serializable]
+  public class PlaceHolderSubCategory
+  {
+    public string Name;
+    public Question[] QuestionsGroup;
+  }
 }

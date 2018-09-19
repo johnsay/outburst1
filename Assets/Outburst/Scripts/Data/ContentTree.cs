@@ -5,11 +5,14 @@ using UnityEngine;
 public class ContentTree : ScriptableObject
 {
     public TreeNode<Category> Root = new TreeNode<Category>(null);
-    public QuestionPack[] QuestionPacks;
+    public PlaceholderContent.PlaceHolderCategory[] QuestionPacks;
 
     private void OnEnable()
     {
-        Root = PlaceholderContent.Generate();
+        Root = PlaceholderContent.Generate(this);
     } 
+  
+  
+  
 }
   

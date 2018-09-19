@@ -21,4 +21,12 @@ public class TeamHandler : Singleton<TeamHandler>
   {
     return _teamOne.Name == teamName;
   }
+
+  public TeamData[] Teams()
+  {
+    List<TeamData> list = new List<TeamData>();
+    list.Add(_teamOne);
+    list.Add(_teamTwo);
+    return list.ToArray();
+  }
 }
