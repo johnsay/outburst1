@@ -14,3 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Outburst/Scenes/Hub.unity
     guid: f52ef90f19ab8489b9634622c21c560d
+  - enabled: 1
+    path: Assets/Outburst/Scenes/Question.unity
+    guid: ec04352a6ced74c6ba96a34a086f81b0
+  m_configObjects: {}
